@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    match /reviews/{reviewId} {
+      allow list: if true; // Publicly list reviews
+      allow get: if true;  // Publicly get a specific review
+      
+      allow create: if isSignedIn() 
+        && isValidReview(incoming())
+        && isValidId(reviewId);
+
+      // Disable updates and deletes for now to prevent tampering
+      allow update, delete: if false;
+    }
+
+    function isValidReview(data) {
+      return data.keys().hasAll(['name', 'rating', 'comment', 'createdAt']) 
+        && data.keys().size() == 4
+        && data.name is string && data.name.size() > 0 && data.name.size() <= 100
+        && data.rating is number && data.rating >= 1 && data.rating <= 5
+        && data.comment is string && data.comment.size() > 0 && data.comment.size() <= 1000
+        && data.createdAt == request.time;
+    }
+  }
+}

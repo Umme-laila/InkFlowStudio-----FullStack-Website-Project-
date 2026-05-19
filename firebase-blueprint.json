@@ -1,0 +1,35 @@
+{
+  "entities": {
+    "Review": {
+      "title": "Review",
+      "description": "User review about their experience",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the reviewer"
+        },
+        "rating": {
+          "type": "number",
+          "description": "Rating from 1 to 5"
+        },
+        "comment": {
+          "type": "string",
+          "description": "The review content"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the review was created"
+        }
+      },
+      "required": ["name", "rating", "comment", "createdAt"]
+    }
+  },
+  "firestore": {
+    "reviews/{reviewId}": {
+      "schema": "Review",
+      "description": "Collection of user reviews"
+    }
+  }
+}
