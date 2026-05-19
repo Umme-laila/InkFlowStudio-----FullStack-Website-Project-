@@ -1,5 +1,5 @@
 <p align="center">
-  <strong style="font-size: 2rem; color: #F59E0B;">✍️ InkFlow</strong><br/>
+  <h1><strong style="font-size: 2rem; color: #F59E0B;">✍️ InkFlow</strong><h1><br/>
   <em>The AI Study Partner</em><br/>
   <strong>Handwriting meets intelligence</strong>
 </p>
