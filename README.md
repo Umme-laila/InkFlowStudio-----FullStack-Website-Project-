@@ -1,14 +1,27 @@
-<p align="center">
-  <h1><strong style="font-size: 2rem; color: #F59E0B;">✍️ InkFlow</strong><h1><br/>
-  <em>The AI Study Partner</em><br/>
-  <strong>Handwriting meets intelligence</strong>
+<div align="center">
+
+# ✨ InkFlow
+
+### The AI Study Partner
+
+Transform digital material into authentic handwritten masterpieces.<br>
+Professional • Warm • Inviting
+
+<p>
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Vite-Fast-purple?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Styled-38BDF8?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/AI-Gemini-orange?style=for-the-badge&logo=google" />
 </p>
 
-<p align="center">
-  <strong>Transform digital material into authentic handwritten masterpieces.</strong><br/>
-  <em>Professional • Warm • Inviting</em>
-</p>
-<br>
+</div>
+
+---
+
+> Turn plain digital text into realistic handwritten notes with the power of AI.
+
+<br/>
+
 
 # 🌟 Overview
 
