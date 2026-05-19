@@ -1,10 +1,7 @@
-<!--
-  InkFlow – The AI Study Partner
-  A modern, inviting README with badges, callouts, and polished layout.
--->
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=500&color=F59E0B&center=true&vCenter=true&width=500&lines=✍️+InkFlow;The+AI+Study+Partner;Handwriting+meets+intelligence" alt="Typing SVG" />
+  <strong style="font-size: 2rem; color: #F59E0B;">✍️ InkFlow</strong><br/>
+  <em>The AI Study Partner</em><br/>
+  <strong>Handwriting meets intelligence</strong>
 </p>
 
 <p align="center">
@@ -58,8 +55,8 @@ By combining **neural handwriting synthesis** with **advanced AI note extraction
 
 
 
-View your app in AI Studio: https://inkflow-ai-handwriting-studio-569971597352.asia-southeast1.run.app
-
+View your app in AI Studio: https://inkflow-ai-handwriting-studio-569971597352.asia-southeast1.run.app <br>
+Complete Tutorial : http://bit.ly/4uQ6SSu
 <br>
 
 ## Run app Locally
